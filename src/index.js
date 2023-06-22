@@ -133,3 +133,38 @@ import "./styles.css";
 
 // const arr7 = [...arr4, ...arr5];
 // console.log(`arr7: ${arr7}`);
+
+// mapやfilterを使った配列処理
+// const nameArray = ["hirei", "tanaka", "sato", "yamada"];
+// for (let i = 0; i < nameArray.length; i++) {
+//   console.log(nameArray[i]);
+// }
+
+// const nameArray2 = [...nameArray];
+// nameArray2.map((name) => {
+//   console.log(name);
+// });
+
+// nameArray.map((name, index) => {
+//   console.log(`${index + 1}番目は、${name}です。`);
+// });
+
+// const number = [1, 2, 3, 4, 5];
+// const newNumArray = number.filter((num) => {
+//   if (num % 2 === 0) {
+//     return num;
+//   }
+// });
+
+// console.log(`2で割った余りが0の場合のみ表示: ${newNumArray}`);
+
+// const newNameArray = nameArray.map((name) => {
+//   if (name === "hirei") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArray);
+
+// 三項演算子
