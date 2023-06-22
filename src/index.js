@@ -59,22 +59,42 @@ import "./styles.css";
 
 // アロー関数
 // 従来の関数の書き方
-function func1(str) {
-  return str;
-}
+// function func1(str) {
+//   return str;
+// }
 
-const func1Test = func1("test");
-console.log("従来の書き方: " + func1Test);
+// const func1Test = func1("test");
+// console.log("従来の書き方: " + func1Test);
 
-// アロー関数の書き方
-const func2 = (str) => {
-  return str;
-};
-const func2Test = func2("test2");
-console.log(`アロー関数の書き方: ${func2Test}`);
+// // アロー関数の書き方
+// const func2 = (str) => {
+//   return str;
+// };
+// const func2Test = func2("test2");
+// console.log(`アロー関数の書き方: ${func2Test}`);
 
-const func3 = (num1, num2) => {
-  return num1 + num2;
-};
-const func3Test = func3(10, 20);
-console.log(`合計: ${func3Test}`);
+// const func3 = (num1, num2) => {
+//   return num1 + num2;
+// };
+// const func3Test = func3(10, 20);
+// console.log(`合計: ${func3Test}`);
+
+// 分割代入
+// const myProfile = {
+//   name: "hirei",
+//   age: 27,
+// };
+// const message = `名前は${myProfile.name}です。年齢は${myProfile.age}歳です。`;
+// console.log(`自己紹介: ${message}`);
+
+// const { name, age } = myProfile;
+// const message2 = `名前は${name}です。年齢は${age}歳です。`;
+// console.log(`自己紹介: ${message2}`);
+
+const myProfile2 = ["hirei", 27];
+const message3 = `名前は${myProfile2[0]}です。年齢は${myProfile2[1]}歳です。`;
+console.log(`自己紹介: ${message3}`);
+
+const [name, age] = myProfile2;
+const message4 = `名前は${name}です。年齢は${age}歳です。`;
+console.log(`自己紹介: ${message4}`);
