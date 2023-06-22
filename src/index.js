@@ -182,10 +182,32 @@ import "./styles.css";
 
 // console.log(`結果: ${formattedNum}`);
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100
-    ? "100を超えているのでやり直してください。"
-    : "許容範囲内です。";
-};
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100
+//     ? "100を超えているのでやり直してください。"
+//     : "許容範囲内です。";
+// };
 
-console.log(`checkSumの結果: ${checkSum(80, 20)}`);
+// console.log(`checkSumの結果: ${checkSum(80, 20)}`);
+
+// 論理演算子の本当の意味を知ろう
+// const flag1 = true;
+// const flag2 = false;
+
+// if (flag1 || flag2) {
+//   console.log("1か2のどちらかがtrueです");
+// }
+
+// if (flag1 && flag2) {
+//   console.log("1も2もtrueです");
+// }
+
+// || は左側がfalseとなる時、右側を実行する。左側がtrueなら、左側をそのまま返す
+// const num = null;
+// const fee = num || "金額が未設定です。";
+// console.log(fee);
+
+// && は左側がtrueなら、右側を実行する。左側がfalseなら、左側をそのまま返す
+// const num2 = null;
+// const fee2 = num2 && "何か設定されました。";
+// console.log(fee2);
