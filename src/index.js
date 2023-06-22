@@ -52,7 +52,29 @@ import "./styles.css";
 // console.log("value5: " + value5);
 
 // テンプレート文字列
-const name = "hirei";
-const age = 27;
+// const name = "hirei";
+// const age = 27;
 
-console.log(`私の名前は${name}です。年齢は${age}歳です。`);
+// console.log(`私の名前は${name}です。年齢は${age}歳です。`);
+
+// アロー関数
+// 従来の関数の書き方
+function func1(str) {
+  return str;
+}
+
+const func1Test = func1("test");
+console.log("従来の書き方: " + func1Test);
+
+// アロー関数の書き方
+const func2 = (str) => {
+  return str;
+};
+const func2Test = func2("test2");
+console.log(`アロー関数の書き方: ${func2Test}`);
+
+const func3 = (num1, num2) => {
+  return num1 + num2;
+};
+const func3Test = func3(10, 20);
+console.log(`合計: ${func3Test}`);

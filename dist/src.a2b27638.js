@@ -226,10 +226,32 @@ require("./styles.css");
 // value5.push("monkey");
 // console.log(value5);
 // console.log("value5: " + value5);
+
 // テンプレート文字列
-var name = "hirei";
-var age = 27;
-console.log("\u79C1\u306E\u540D\u524D\u306F".concat(name, "\u3067\u3059\u3002\u5E74\u9F62\u306F").concat(age, "\u6B73\u3067\u3059\u3002"));
+// const name = "hirei";
+// const age = 27;
+
+// console.log(`私の名前は${name}です。年齢は${age}歳です。`);
+
+// アロー関数
+// 従来の関数の書き方
+function func1(str) {
+  return str;
+}
+var func1Test = func1("test");
+console.log("従来の書き方: " + func1Test);
+
+// アロー関数の書き方
+var func2 = function func2(str) {
+  return str;
+};
+var func2Test = func2("test2");
+console.log("\u30A2\u30ED\u30FC\u95A2\u6570\u306E\u66F8\u304D\u65B9: ".concat(func2Test));
+var func3 = function func3(num1, num2) {
+  return num1 + num2;
+};
+var func3Test = func3(10, 20);
+console.log("\u5408\u8A08: ".concat(func3Test));
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
