@@ -168,3 +168,24 @@ import "./styles.css";
 // console.log(newNameArray);
 
 // 三項演算子
+// ある条件 ? 条件がtrueの時 : 条件がfalseの時
+// const val1 = 1;
+// const val2 = 2;
+
+// const result =
+//   val1 > val2 ? `${val1}は${val2}より大きい` : `${val1}は${val2}より小さい`;
+// console.log(`結果: ${result}`);
+
+// const num = 1300;
+// const formattedNum =
+//   typeof num === "number" ? num.toLocaleString() : "数字を入力してください。";
+
+// console.log(`結果: ${formattedNum}`);
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100
+    ? "100を超えているのでやり直してください。"
+    : "許容範囲内です。";
+};
+
+console.log(`checkSumの結果: ${checkSum(80, 20)}`);
